@@ -27,7 +27,12 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - uses: android-actions/setup-android@v3
+      # O runner do GitHub já traz o Android SDK; só aceitamos as licenças.
+      - name: Preparar Android SDK
+        run: |
+          SDKM=$(ls -d "$ANDROID_HOME"/cmdline-tools/*/bin/sdkmanager | sort -V | tail -1)
+          echo "Usando $SDKM"
+          yes | "$SDKM" --licenses > /dev/null || true
 
       - name: Instalar dependências
         run: npm install --no-audit --no-fund
