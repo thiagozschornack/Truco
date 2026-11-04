@@ -5,7 +5,7 @@
   "description": "EmpreenderTHZ Truco Pro — Truco Paulista para Android (Capacitor)",
   "scripts": {
     "android:add": "cap add android",
-    "android:assets": "capacitor-assets generate --android --iconBackgroundColor #0d2a22 --iconBackgroundColorDark #0d2a22 --splashBackgroundColor #0a1716 --splashBackgroundColorDark #0a1716",
+    "android:assets": "capacitor-assets generate --android --iconBackgroundColor '#0d2a22' --iconBackgroundColorDark '#0d2a22' --splashBackgroundColor '#0a1716' --splashBackgroundColorDark '#0a1716'",
     "android:sync": "cap sync android",
     "android:open": "cap open android"
   },
