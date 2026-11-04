@@ -1,0 +1,12 @@
+{
+  "appId": "com.empreenderthz.truco",
+  "appName": "Truco Pro",
+  "webDir": "www",
+  "backgroundColor": "#0a1716",
+  "android": {
+    "backgroundColor": "#0a1716",
+    "allowMixedContent": false,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false
+  }
+}
